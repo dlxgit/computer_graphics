@@ -34,10 +34,10 @@ public class Window extends GLCanvas implements GLEventListener {
         gl.glShadeModel(GL2.GL_FLAT);
         try {
             m_shaderProgram.compileShader(gl,
-                                        "D:/cg/shaderExample/src/shader/simplevShader.glsl",
+                                        "D:/cg/lab3_task4_v3/src/shader/vshader.glsl",
                                         ShaderType.Vertex);
             m_shaderProgram.compileShader(gl,
-                                        "D:/cg/shaderExample/src/shader/simplefShader.glsl",
+                                        "D:/cg/lab3_task4_v3/src/shader/fshader.glsl",
                                         ShaderType.Fragment);
             m_shaderProgram.link(gl);
         } catch (Exception e) {
